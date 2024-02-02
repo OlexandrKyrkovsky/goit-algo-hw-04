@@ -11,4 +11,4 @@ def get_cats_info(path):
             outlist.append({'id':line[0],'name':line[1],'age':line[2]})
     return outlist
        
-print(get_cats_info(path))
+print(*get_cats_info(path),sep='\n')
